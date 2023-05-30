@@ -1,7 +1,7 @@
 # Setup and Configuration of Docker RStudio
 
 ### Setup
-If running rocker/rstudio on an ARM mac (using an Apple Silicon chip) make sure to Enable rosetta from command line: 
+If running rocker/rstudio on an ARM mac (using an Apple Silicon chip) make sure to enable rosetta from command line: 
 ```sh
 softwareupdate --install-rosetta
 ```
@@ -20,6 +20,10 @@ To install new package (libraries) in the RStudio env that you want to reuse in 
 2. Run in terminal:
 ```hp
 docker compose build --no-cache
+```
+3. Restart container:
+```hp
+docker compose up
 ```
 
 
