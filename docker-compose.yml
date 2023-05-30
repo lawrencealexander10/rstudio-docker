@@ -1,0 +1,15 @@
+version: '3.8'
+
+services: 
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: "linux/x86_64"
+    ports:
+      - '8787:8787'
+    environment:
+      - DISABLE_AUTH=true
+      - ROOT=true
+    volumes:
+      - ./Projects:/home/rstudio
