@@ -32,7 +32,7 @@ Additional Details:
 - Fix `no matching manifest for Linux/arm64/v8 in the manifest list entries` error : 
 -- Add line to docker-compose (https://onexlab-io.medium.com/apple-m1-chip-no-matching-manifest-for-linux-arm64-v8-docker-mysql-5142060a9309)
 ```sh 
-platform: linux/amd64 
+platform: "linux/x86_64"
 ``` 
 - Dave Tang Blog on configuring Docker Rstudio:
 https://github.com/davetang/learning_docker/blob/main/rstudio/Dockerfile
