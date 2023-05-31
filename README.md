@@ -5,7 +5,9 @@ If running rocker/rstudio on an ARM mac (using an Apple Silicon chip) make sure 
 ```sh
 softwareupdate --install-rosetta
 ```
-Update Docker Hub App Settings: Enable the checkbox under the experimental settings (settings > features in development > use rosetta)
+Update Docker Hub App Settings: 
+- Turn on Virtualization Framework (enabled via the toggle in the General panel)
+- Enable the checkbox under the experimental settings (settings > features in development > use rosetta)
 ![Docker Setting - Rosetta emulation on Apple Silicon](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6uPAJ8XiHyZ0gqMy2JscBQ.png)
 Footnote: (https://github.com/rocker-org/rocker-versioned2/issues/144#issuecomment-1412330338)
 
@@ -30,7 +32,7 @@ docker compose up
 Additional Details:
 - R Docker Tutorial: https://jsta.github.io/r-docker-tutorial/
 - Fix `no matching manifest for Linux/arm64/v8 in the manifest list entries` error : 
--- Add line to docker-compose (https://onexlab-io.medium.com/apple-m1-chip-no-matching-manifest-for-linux-arm64-v8-docker-mysql-5142060a9309)
+- Add line to docker-compose (https://onexlab-io.medium.com/apple-m1-chip-no-matching-manifest-for-linux-arm64-v8-docker-mysql-5142060a9309)
 ```sh 
 platform: "linux/x86_64"
 ``` 
