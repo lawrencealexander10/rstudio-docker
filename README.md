@@ -28,6 +28,14 @@ docker compose build --no-cache
 docker compose up
 ```
 
+### Regular Use
+
+Start container:
+```hp
+docker compose up
+```
+
+To make local files accessible in the container place them in the Projects folder
 
 Additional Details:
 - R Docker Tutorial: https://jsta.github.io/r-docker-tutorial/
